@@ -1,0 +1,15 @@
+(defun anyoddp(x)
+  (cond ((null x) nil)
+	((oddp (first x)) t)
+	(t (anyoddp(rest x)))))
+
+(defun extract-numbers(x)
+  (cond ((null x) nil)
+	((ischar (first x)) (cons (first x) (extract-numbers(rest x))))
+	(t extract-numbers(rest x))))
+
+(defun count-odd(x)
+  (cond ((null x) 0)
+	((oddp (first x)) (+ 1(count-odd((rest x)))))
+	))
+;(defun )

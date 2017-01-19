@@ -1,0 +1,5 @@
+(defun exor (x y)
+  (cond ((null x) y)
+	((member (first x) y) (exor (rest x) (remove (first x) y)))
+	(t (cons (first x) (exor (rest x) y)))
+	))

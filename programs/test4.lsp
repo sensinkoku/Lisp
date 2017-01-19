@@ -1,0 +1,5 @@
+(defun triangle (x)
+  (cond ((< x 1) nil)
+	(t (drawline x) (format t "~%") (triangle (- x 1)))
+   )
+  )

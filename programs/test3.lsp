@@ -1,0 +1,6 @@
+(defun myfindif (func x)
+  (cond ((null x) nil)
+	((funcall func (first x)) (first x))
+	(t (myfindif func (rest x)))
+   )
+  )

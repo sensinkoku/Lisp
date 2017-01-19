@@ -4,6 +4,11 @@ mainly usable when you add an element to the top of lists.
 (cons 1 '(1 2 3)) => (1 2 3 4)
 (cons 1 2) => (1 . 2)
 
+append: append args should be lists.
+
+
+
+
 (null x): x is null or not
 (rest x): return x except first element
 (remove a b): remove a from list, b.
@@ -13,6 +18,7 @@ p series
 listp :judge list or not
 evenp, numberp, zerop, oddp, symbolp(judge string),
 atom : if not cons return T
+
 
 Hi-order function
 (funcall func args ...)

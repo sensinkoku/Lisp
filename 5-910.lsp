@@ -6,7 +6,8 @@
 )
 ;q-10
 (defun drawbox (n m)
-  (cond ((= m 0) nil)
-	(t (drawline n)
-	   (format t "~%")
-	   (drawbox n (- m 1)))))
+  (cond 
+  	((= m 0) nil)
+	(t (drawline n) (format t "~%") (drawbox n (- m 1)))
+	)
+)

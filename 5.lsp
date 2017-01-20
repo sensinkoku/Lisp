@@ -27,3 +27,28 @@
   (length  (remove-if-not
 	    #`(lambda(x)(equal x `the))
 	    x)))
+(defun my-intersection(x y)
+ (remove-if-not #'(lambda(e)(member e y))x)
+ )
+ 
+(defun roughly-equal (x k)
+  (remove-if-not #'(lambda(e) (and (> e (- k 10))
+           (< e (+ k 10))))
+     x))
+
+(defun foo (x) (mapcar #'(lambda (e) e) x))
+
+(defun drawline(n)
+  (cond 
+  ((= n 0) nil)
+  (t (format t "*") (drawline (- n 1)))
+  )
+)
+;q-10
+(defun drawbox (n m)
+  (cond 
+    ((= m 0) nil)
+  (t (drawline n) (format t "~%") (drawbox n (- m 1)))
+  )
+)
+

@@ -14,7 +14,7 @@
   (mapcar #'onoff x))
 
 (defun flip2(x)
-  (mapcar #'(lambda (p)(if (equal p 'on) 'off 'on x))))
+  (mapcar #'(lambda (p)(if (equal p 'on) 'off 'on))x))
 
 (defun is_between_one_to_five (x) 
   (and (> e 1) (< e 5)))

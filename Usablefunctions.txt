@@ -1,0 +1,24 @@
+longer リストの長さの比較
+ordered　２つの数値を
+same-sign同じ符号または同じ0か
+3-1
+add-up すべての要素の和を返す
+extract-numbers 数字の要素だけ選んでリストとして返す
+count-odd リスト内の奇数の個数を返す
+4-1
+rev リストの要素を逆順死にて返す
+rm リストの中から特定のオブジェクトを取り除く
+mem 特定のオブジェクトがあるかどうかを調べる
+beforep xがyより先に現れていたら
+rmdup 重複している要素を一つにする
+wa sa seki ２つの集合に関して処理
+lokup キーを与えてそのエントリを取り出す
+sum-tree 任意の深さの入れ子になっているリストの和を求める
+flat, sleepy 任意の深さのものを〜
+5-1
+関数適用
+pick 数のリストを受取1と5の間の数のみをリストにして返す関数
+cout-the 英単語列のtheの個数を返す
+:その他(デフォルト)
+remove (remove item sequence) itemと等しい要素を取り除く
+member

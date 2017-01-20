@@ -1,30 +1,30 @@
 ; 4-1
-(setf line '(a b c))
+;(setf line '(a b c))
 
 ;(a b c)
 ;1.
-(append line (list (first line)))
+;(append line (list (first line)))
 
 ;=> (a b c a)
 
 ;2.
-(append (last line) line)
+;(append (last line) line)
 
-:=> (c a b c)
+;:=> (c a b c)
 
 ;3.
-(list (first line)(last line))
+;(list (first line)(last line))
 
 ;=> (a (c))
 ; because last returns last cons cell
 
 ;4.
-(cons (last line) line)
+;(cons (last line) line)
 
 ;=>((c) a b c)
 
 ;5
-(append line '(d e f))
+;(append line '(d e f))
 
 ;=> (a b c d e f)
 
@@ -76,8 +76,8 @@
 (defun sa (x y)
   (cond 
       ((null x) nil)
-      ((mem ( car x) y) (sa (cdr x) y)) ;if-have
-      (t (cons (car x) (sa (cdr x) y))) ;if-not-have
+      ((mem ( car x) y) (sa (cdr x) y))
+      (t (cons (car x) (sa (cdr x) y)))
       )
 )
 
@@ -104,7 +104,7 @@
 
 (defun addone (n) ( + 1 n))
 (defun add1 (x)
-    (mapcar #`addone x)
+    (mapcar #'addone x)
     )
 
 

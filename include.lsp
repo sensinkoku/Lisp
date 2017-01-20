@@ -1,0 +1,8 @@
+(load "4.lsp")
+(load "5.lsp")
+(load "3-567.lsp")
+(load "saiki_2-5.lsp")
+(load "blockdata.lsp")
+(load "block_12_9.lsp")
+(load "hanoi.lsp")
+(load "3moku.lsp")

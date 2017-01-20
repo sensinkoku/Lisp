@@ -43,6 +43,6 @@
     )
 )
 
-(defun addone (n) ( + 1 n))
-(defun add1 (x)
-(mapcar #`addone x))
+;(defun addone (n) ( + 1 n))
+;(defun add1 (x)
+;(mapcar #`addone x))
